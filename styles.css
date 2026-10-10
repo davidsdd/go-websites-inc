@@ -106,7 +106,6 @@ h1 {
 }
 
 .title-line { display: block; }
-.conjunction { color: var(--muted); font-weight: 300; }
 
 .corporation {
   display: block;
