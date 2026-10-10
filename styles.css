@@ -19,6 +19,7 @@
 :root {
   --background: #070b10;
   --text: #eef3f8;
+  --title: #c2ccd6;
   --accent: #9ae8f5;
   --muted: #80909e;
   --line: rgba(164, 200, 218, 0.18);
@@ -95,6 +96,7 @@ h1 {
   position: relative;
   z-index: 1;
   margin: 0;
+  color: var(--title);
   max-width: 1100px;
   font-size: clamp(48px, 6.45vw, 108px);
   font-weight: 500;
