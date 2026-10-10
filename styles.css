@@ -19,7 +19,7 @@
 :root {
   --background: #070b10;
   --text: #eef3f8;
-  --title: #acd3db;
+  --title: #c4eef7; /* 原始近白色与 Corporation 浅青蓝色的 50% 混合。 */
   --accent: #9ae8f5;
   --muted: #80909e;
   --line: rgba(164, 200, 218, 0.18);
