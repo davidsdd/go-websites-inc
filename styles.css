@@ -4,7 +4,7 @@
   src: url("./fonts/space-grotesk-latin.woff2") format("woff2");
   font-style: normal;
   font-weight: 300 500;
-  font-display: swap;
+  font-display: block;
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   src: url("./fonts/space-mono-latin.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: block;
 }
 
 /* 修改以下颜色可以调整页面配色。字体、图形均来自本地，无需联网。 */
@@ -32,7 +32,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text);
-  font-family: "Space Grotesk", Arial, sans-serif;
+  font-family: var(--font-grotesk, "Space Grotesk", Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -171,7 +171,7 @@ h2 { margin: 0; font-size: 20px; font-weight: 400; line-height: 1.4; }
   display: block;
   margin-bottom: 15px;
   color: var(--accent);
-  font-family: "Space Mono", monospace;
+  font-family: var(--font-mono, "Space Mono", monospace);
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
