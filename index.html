@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 修改这里，可以更改浏览器标签页上的标题。 -->
+  <title>Luxe Commander and Logistician Corporation</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 32'%3E%3Cpath fill='%239ae8f5' d='M3 3H9V23H29V29H3V3ZM15 3H31V19H25V9H15V3ZM15 13H21V19H15V13Z'/%3E%3C/svg%3E">
+  <!-- 样式和字体保存在同一文件夹中，双击 HTML 即可离线打开。 -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page">
+    <!-- 顶部标志和背景图形只作装饰。 -->
+    <div class="masthead" aria-hidden="true">
+      <svg class="insignia" viewBox="0 0 34 32" fill="none">
+        <path d="M3 3H9V23H29V29H3V3Z" fill="currentColor"/>
+        <path d="M15 3H31V19H25V9H15V3Z" fill="currentColor" opacity=".48"/>
+        <path d="M15 13H21V19H15V13Z" fill="currentColor"/>
+      </svg>
+      <div class="masthead-line"></div>
+      <div class="signal"><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="hero">
+      <div class="orbital" aria-hidden="true">
+        <svg viewBox="0 0 720 720" fill="none">
+          <defs>
+            <radialGradient id="halo">
+              <stop offset="0" stop-color="#3c9dbb" stop-opacity=".12"/>
+              <stop offset=".6" stop-color="#398ca7" stop-opacity=".05"/>
+              <stop offset="1" stop-color="#398ca7" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="sphere" cx="72%" cy="27%" r="83%">
+              <stop offset="0" stop-color="#254955" stop-opacity=".23"/>
+              <stop offset=".72" stop-color="#0c1b25" stop-opacity=".3"/>
+              <stop offset="1" stop-color="#080d13" stop-opacity=".1"/>
+            </radialGradient>
+            <linearGradient id="rim" x1="166" y1="554" x2="554" y2="166" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#89d6e7" stop-opacity=".02"/>
+              <stop offset=".55" stop-color="#89d6e7" stop-opacity=".18"/>
+              <stop offset="1" stop-color="#b3edf7" stop-opacity=".6"/>
+            </linearGradient>
+            <linearGradient id="trajectory" x1="70" y1="490" x2="650" y2="230" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#a4e5f1" stop-opacity="0"/>
+              <stop offset=".65" stop-color="#a4e5f1" stop-opacity=".35"/>
+              <stop offset="1" stop-color="#a4e5f1" stop-opacity=".12"/>
+            </linearGradient>
+          </defs>
+          <circle cx="360" cy="360" r="345" fill="url(#halo)"/>
+          <circle cx="360" cy="360" r="276" stroke="#83c8df" stroke-opacity=".08"/>
+          <circle cx="360" cy="360" r="298" stroke="#83c8df" stroke-opacity=".12" stroke-dasharray="1 15"/>
+          <path d="M360 36V70M650 360H684M360 650V684M36 360H70" stroke="#9ae8f5" stroke-opacity=".3"/>
+          <circle cx="360" cy="360" r="220" fill="url(#sphere)" stroke="url(#rim)"/>
+          <g stroke="#85c8de" stroke-opacity=".1">
+            <ellipse cx="360" cy="360" rx="220" ry="68" transform="rotate(-28 360 360)"/>
+            <ellipse cx="360" cy="360" rx="220" ry="142" transform="rotate(-28 360 360)"/>
+            <ellipse cx="360" cy="360" rx="68" ry="220" transform="rotate(-28 360 360)"/>
+            <ellipse cx="360" cy="360" rx="142" ry="220" transform="rotate(-28 360 360)"/>
+            <path d="M166 463L554 257M257 166L463 554"/>
+          </g>
+          <ellipse cx="360" cy="360" rx="324" ry="97" transform="rotate(-28 360 360)" stroke="url(#trajectory)"/>
+          <g class="orbit-path">
+            <path d="M523 115A294 294 0 0 1 652 329" stroke="#a8e9f4" stroke-opacity=".6"/>
+            <circle cx="652" cy="329" r="4" fill="#c4f5fc"/>
+            <circle cx="652" cy="329" r="10" stroke="#9ae8f5" stroke-opacity=".22"/>
+            <circle cx="113" cy="519" r="2.5" fill="#9ae8f5" fill-opacity=".6"/>
+          </g>
+          <path d="M348 360H372M360 348V372" stroke="#9ae8f5" stroke-opacity=".3"/>
+        </svg>
+      </div>
+
+      <!-- 主标题：直接修改下面的文字即可。span 仅用于控制换行和颜色。 -->
+      <h1>
+        <span class="title-line">Luxe Commander</span>
+        <span class="title-line"><span class="conjunction">and</span> Logistician</span>
+        <span class="corporation">Corporation</span>
+      </h1>
+    </div>
+
+    <!-- 三个分支标题：修改文字时保留标签即可。 -->
+    <div class="branches">
+      <section class="branch">
+        <h2><span class="section-name">Section 21 <span class="separator">-</span></span> <span class="course-name">Professional Course</span></h2>
+      </section>
+      <section class="branch">
+        <h2><span class="section-name">Section 22 <span class="separator">-</span></span> <span class="course-name">Common Course</span></h2>
+      </section>
+      <section class="branch">
+        <h2><span class="section-name">Section 23 <span class="separator">-</span></span> <span class="course-name">Professional Handling</span></h2>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
